@@ -1,6 +1,6 @@
 # REDUX-ECOMMERCE-SITE
 
-[Deplyed Application]()
+[Deployed Application]()
 # Descriptions
 My tasks on this assignment is to re-factor an ecommerce site so that it uses REDUX. Currently the application use CONTEXT API and we will turn this into using REDUX to manage global state.
 
