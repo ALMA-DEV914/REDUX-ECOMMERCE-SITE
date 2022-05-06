@@ -1,6 +1,6 @@
 :root {
   --primary: #232F3E;
-  --secondary: #F3A847;
+  --secondary: #0e5997;
   --tertiary: #B12704;
   --light: #fafafa;
   --dark: #272f32;
@@ -21,7 +21,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Georgia', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Georgia', sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -42,10 +42,12 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
+   width: 80%;
 }
 
 h2 {
   font-size: 2rem;
+  font-weight: bold;
 }
 
 h3 {
@@ -81,22 +83,46 @@ a:hover {
 
 header {
   background: var(--primary);
+  height: 100px;
+  align-items: center;
 }
 
 header a {
   color: var(--light);
 }
 
+.categories-btn{
+  border-left: 5px solid rgb(14, 133, 133);
+  color: var(--dark);
+  border-radius: 0;
+  margin: var(--spacing-one);
+  background-color: aliceblue;
+}
+.addcart-btns{
+  background-color: var(--tertiary);
+  color: var(--light);
+}
 button {
   font-size: 1rem;
   text-decoration: none;
-  padding: 0.25rem 1rem;
+  padding: 0.55rem 1rem;
   border-radius: .5rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  background-color: var(--light);
+}
+.removed-btns{
+  background-color: aliceblue;
+}
+.submit{
+  background-color: rgb(14, 133, 133);
+  color: var(--light);
+}
+.login{
+  background-color: var(--tertiary);
+  color: var(--light);
 }
 
 button:hover {
@@ -117,16 +143,24 @@ span[role="img"] {
 }
 
 form {
-  width: 40%;
+  width: 60%;
+  background-color: antiquewhite;
+  margin: 10% auto;
+  padding: 15px;
+  
 }
-
+label{
+  font-weight: bold;
+}
 input {
   font-size: 1rem;
-  padding: 0.25rem;
+  padding: 0.55rem;
   border: 1px solid var(--dark);
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
+  width: 100%;
+  
 }
 
 input:focus {
@@ -139,6 +173,7 @@ input:focus {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .flex-row {
@@ -152,11 +187,14 @@ input:focus {
 
 .flex-end {
   justify-content: flex-end;
+  padding: 12px;
 }
 
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
+
+  
 }
 
 .mx-2 {
@@ -167,6 +205,7 @@ input:focus {
 .my-1 {
   margin-top: var(--spacing-one);
   margin-bottom: var(--spacing-one);
+  width: 40%;
 }
 
 .my-2 {
@@ -202,9 +241,87 @@ input:focus {
 .error-text {
   color: var(--error);
 }
+.flex-container{
+  display: flex;
+  margin: 5% auto;
+}
+.m-5{
+  width: 60%;
+  margin: 0 5%;
+}
+.home-hero{
+  width: 40%;
+  
+}
+.home-hero img{
+     width: 200px;
+     height: 600px;
+     
+     
+}
+.title{
+  font-size: 45pt !important;
+  font-family: 'Roboto';
+  font-weight: 800;
+}
+
 
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
   }
+}
+@media screen and (max-width:575px){
+    form{
+      width: 100%;
+    }
+    header{
+      display: block;
+    }
+    .my-1{
+      width: 80%;
+    }
+    .title{
+      font-size: 25pt !important;
+    }
+    .home-hero{
+      margin: 20% auto;
+    }
+  
+}
+@media screen and (max-width:414px){
+  form{
+    width: 100%;
+  }
+  header{
+    display: block;
+  }
+  .my-1{
+    width: 80%;
+  }
+  .title{
+    font-size: 25pt !important;
+  }
+  .home-hero{
+    margin: 20% auto;
+  }
+
+}
+@media screen and (max-width:390px){
+  form{
+    width: 100%;
+  }
+  header{
+    display: block;
+  }
+  .my-1{
+    width: 80%;
+  }
+  .title{
+    font-size: 25pt !important;
+  }
+  .home-hero{
+    margin: 20% auto;
+  }
+
 }

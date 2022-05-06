@@ -8,6 +8,7 @@ import {
   UPDATE_CART_QUANTITY,
   CLEAR_CART,
   TOGGLE_CART,
+
 } from "./actions";
 
 const defaultState = {
@@ -16,6 +17,7 @@ const defaultState = {
   currentCategory: "",
   cart: [],
   cartOpen: false,
+  categoriesOpen: false,
 };
 
 const rootReducer = (state = defaultState, action) => {

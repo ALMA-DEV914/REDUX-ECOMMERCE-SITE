@@ -79,7 +79,7 @@ const Cart = () => {
   return (
     <div className="cart">
       <div className="close" onClick={toggleCart}>
-        [close]
+        X
       </div>
       <h2>Shopping Cart</h2>
       {state.cart.length ? (
@@ -93,16 +93,13 @@ const Cart = () => {
               //   <button>Checkout</button>
               <button onClick={submitCheckout}>Checkout</button>
             ) : (
-              <span>(log in to check out)</span>
+              <span className="checkout">Login to checkout</span>
             )}
           </div>
         </div>
       ) : (
         <h3>
-          <span role="img" aria-label="shocked">
-            😱
-          </span>
-          You haven't added anything to your cart yet!
+          Your cart is empty, start shopping!
         </h3>
       )}
     </div>
