@@ -35,7 +35,7 @@
 .cart-closed {
   position: fixed;
   top: 2%;
-  right: 5%;
+  right: 2%;
   font-size: 2rem;
   cursor: pointer;
   background-color: aliceblue;
