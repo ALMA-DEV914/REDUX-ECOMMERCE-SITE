@@ -15,7 +15,7 @@ import {
 } from "../utils/actions";
 
 import Cart from "../components/Cart";
-
+import Footer from "../components/Footer";
 import { idbPromise } from "../utils/helpers";
 
 function Detail() {
@@ -96,7 +96,7 @@ function Detail() {
     <>
       {currentProduct ? (
         <div className="container my-1">
-          <Link to="/">← Back to Products</Link>
+          <Link to="/home">← Back to Products</Link>
 
           <h2>{currentProduct.name}</h2>
 
@@ -121,6 +121,7 @@ function Detail() {
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
       <Cart />
+      <Footer/>
     </>
   );
 }

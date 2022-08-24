@@ -5,8 +5,8 @@
   --light: #fafafa;
   --dark: #272f32;
   --error: rgb(228, 46, 1);
-  --spacing-one: calc(1rem * 0.5);
-  --spacing-two: calc(1rem);
+  --spacing-one: calc(2rem * 0.5);
+  --spacing-two: calc(2rem);
 }
 
 * {
@@ -152,12 +152,13 @@ span[role="img"] {
 form {
   width: 60%;
   background-color: antiquewhite;
-  margin: 10% auto;
+  margin: 15% auto;
   padding: 15px;
   
 }
 label{
   font-weight: bold;
+  
 }
 input {
   font-size: 1rem;
@@ -175,13 +176,16 @@ input:focus {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
 
-.container {
+.container{
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
   
 }
+
 
 .flex-row {
   display: flex;
@@ -272,7 +276,33 @@ input:focus {
   font-weight: 800;
 }
 
+.footer{
+  background-color: var(--primary);
+  color: #fafafa;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.footer div{
+  margin: 2% auto;
+  width: 100%;
+  padding: 15px;
 
+}
+.subscribe-form{
+  display: flex;
+}
+.subscribe-form button{
+  color: #fafafa;
+  background-color: var(--tertiary);
+}
+.icon{
+  font-size: 25px;
+  border: 1px solid lightgray;
+  margin: 2%;
+  padding: 4px;
+}
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;

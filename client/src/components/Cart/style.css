@@ -60,8 +60,8 @@
   margin: 0 0.5rem 1rem 0;
 }
 .checkout{
-  background-color:rgb(125, 30, 13);
-  color: white;
+  background-color:rgb(225, 217, 216);
+  color: white !important;
   padding: .55rem;
 
 }

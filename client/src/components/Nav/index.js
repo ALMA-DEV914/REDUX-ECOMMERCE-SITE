@@ -45,7 +45,7 @@ function Nav() {
       <h1>
         <Link to="/">
           <span role="img" aria-label="shopping bag">🛍️</span>
-          Sell@Shop
+          Select@Collect
         </Link>
       </h1>
 

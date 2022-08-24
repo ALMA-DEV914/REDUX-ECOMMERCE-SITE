@@ -10,7 +10,8 @@ import "./style.css";
 
 import { QUERY_CHECKOUT } from "../../utils/queries";
 import { loadStripe } from "@stripe/stripe-js";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckSquare, faCartPlus } from "@fortawesome/free-solid-svg-icons";
 const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
 
 const Cart = () => {
@@ -81,7 +82,7 @@ const Cart = () => {
       <div className="close" onClick={toggleCart}>
         X
       </div>
-      <h2>Shopping Cart</h2>
+      <h2>Shopping Cart<FontAwesomeIcon icon={faCartPlus} /></h2> <br></br>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
@@ -91,9 +92,12 @@ const Cart = () => {
             <strong>Total: ${calculateTotal()}</strong>
             {Auth.loggedIn() ? (
               //   <button>Checkout</button>
-              <button onClick={submitCheckout}>Checkout</button>
+              <>
+            
+           <button onClick={submitCheckout}> <FontAwesomeIcon icon={faCheckSquare}/> Checkout</button>
+    </>
             ) : (
-              <span className="checkout">Login to checkout</span>
+              <span className="checkout"><a href="/login">Login to checkout</a></span>
             )}
           </div>
         </div>
